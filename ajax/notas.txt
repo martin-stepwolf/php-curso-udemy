@@ -1,0 +1,4 @@
+la practica anteriormente cargaba los datos desde un archivo json normal, pero se modifico para que carge desde una base de datos tomando como intermediario la creacion dinamica del archivo json 
+
+es necesario tener validaciones en javascript(parte del cliente), y en php(lado del servidor).
+el proyecto esta apto para que se le inyecte codigo, y se le quito eso

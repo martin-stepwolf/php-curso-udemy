@@ -1,0 +1,10 @@
+nombre de la base de datos: curso_php_ajax, collation utf8_general_ci
+tabla nombre: usuarios	
+nombre	tipo_datos	otras_especificaciones
+ID	int		llave primary y con auto_increment
+nombre	char	150	
+edad	int	3
+pais	char	150	
+correo	char	150
+
+en todos los campos en la practica no se les permitio valores nulos

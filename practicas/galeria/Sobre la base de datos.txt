@@ -1,0 +1,7 @@
+nombre de la base de datos: curso_galeria
+tabla nombre: fotos	
+nombre	tipo_datos	otras_especificaciones
+id	int		llave primary y con auto_increment
+titulo	varchar		
+imagen	varchar		
+texto	varchar		permitir null

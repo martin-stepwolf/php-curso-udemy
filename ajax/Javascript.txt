@@ -1,0 +1,5 @@
+var nombreamigos = ['alejandro', 'manuel''// creacion de un arreglo
+var martin = {
+"nombre"= "martin",
+"edad"= 23
+}//creacion de un objeto

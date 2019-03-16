@@ -1,0 +1,17 @@
+la carpeta imagenes utilizar no es necesaria, y por lo regular no esta en un proyecto
+unsplash.com es una pagina con buenas fotos de calidad pero pesadas
+
+al iniciar el proyecto se empieza con el codigo html y css, poniendo elementos prueba que mas adelante seran rellenados por php, se importan los elementos externos como los iconos, fuentes, frameworks, etc
+
+es necesario tambien definir las clases y las id en las etiquetas 
+
+de la base de datos no guardamos las imagenes como tal, guardamos solamente su ruta, y la foto se guarda en una carpeta del proyecto(de duplica).
+
+casi que para todas secciones comor regla, lleva un archivo con la programacion y otro archivo referenciado al mismo pero es de la vista
+index.php	index.view.php
+
+por comodidad se replica el codigo html de una vista y se pega en las demas. de alli se hace la adaptacion.
+
+se crea la base de datos
+
+para no replicar mucho codigo se creo un archivo de funciones, donde de alli se ejecutaran las funciones primordiales como la conexion a la base de datos

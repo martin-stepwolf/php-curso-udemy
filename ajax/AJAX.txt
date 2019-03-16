@@ -1,0 +1,13 @@
+es una tecnica para crear sitios web dinamicos
+
+la informacion se envia y se recibe en segundo plano, sin tener que recargar la pagina
+
+se necesita conocer json y javascript
+
+se pueden hacer muchas cosas con ajax
+
+se puede enlazar con una api, la cual genera un archivo json
+
+ajax es muy importante para el desarrollo web
+
+los archivos json nos sera util para enviar informacion de php a javascript y viceversa

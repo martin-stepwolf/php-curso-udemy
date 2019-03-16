@@ -1,0 +1,41 @@
+es donde gestionaremos las bases de datos, las variables en php no son adecuadas para hacer una base de datos
+podemos poner consultas SQL desde la web o desde consola de windows
+la conexion de php y mySQL no es la unica, pero es la mas usual
+
+para acceder desde consola  se requiere el programa de mysql de la carpeta mysql/bin
+pero no podemos entrar asi no mas, se requiere seleccionar un usuario
+estando ya en la carpeta se ejecuta mysql -u root -p
+pide contraseña en caso de que el usuario la tenga
+listo, ya podemos poner las consultas, siempre terminan con ;
+
+consultas
+show databases// mostrara las bases de datos
+create database ''//creara una base de datos
+use ''// se pone la base de datos a usar,
+CREATE TABLE usuarios (id INT AUTO_INCREMENT, nombre varchar(100) not null, PRIMARY KEY(id));// ejemplo creacion de tablas
+show tables// muestra las tablas
+describe usuarios// da un desglose detallado de la tabla
+select * from usuarios// muestra los registros de usuarios
+INSERT INTO usuarios values(null, 'carlos');// insertar registros, se pone null y no importa ya que es autoincrementable
+INSERT INTO usuarios (nombre) values('martin');// insertar registros, especificanos columnas
+UPDATE  usuarios SET nombre ='manuel' WHERE id = 2;// modificar registros
+DELETE FROM usuarios WHERE nombre = 'manuel';// eliminar registro
+SELECT nombre FROM usuarios// filtrar informacion, solo muestra los nombre
+SELECT nombre FROM usuarios WHERE nombre LIKE 'C%'// muestra los nombre que empiezan con C
+SELECT * FROM usuarios ORDER BY nombre ASC// ordena nombre en forma ascendente,  DESC(inverso)
+SELECT * FROM usuarios LIMIT 1;// muestra solo un registro
+SELECT * FROM usuarios LIMIT 0 ,2 // rango de registros a mostrar
+
+es mas facil trabajar en consola en excepcion por la creacion de las tablas
+en php es recomendable poner las consultas en mayusculas para indicar que se esta trabajando con mysql
+desde php admi se puede poner tambien consultas, no solo desde el CMD
+el id para un usuario siempre debe ser el mismo, nunca debe cambiar
+si se elimina un dato y hay mas registros adelante, al agregar un nuevo registro no tomara el id el numero que se elimino si no que seguira con el registro normal
+
+
+existen programas que administran bases de datos ademas del cmd y phpmyadmin
+HeidiSQL es un programa recomendado que ademas tiene PostgreSQL, que puede ser util en la programacion web mas adelante
+no se recomienda comprar un programa hasta que se tenga mas experiencia
+Sequel Pro es para OS, y se recomienda en caso de que se tenga una mac
+
+HeidiSQL es recomendable ya que muestra abajo la consulta que se esta generando, para repaso es bueno
