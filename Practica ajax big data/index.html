@@ -16,7 +16,7 @@
           var gender2 = $('#gender').val();
           console.log('starting ajax');
           $.ajax({
-            url: "./insert.php",
+            url: "insert.php",
             type: "post",
             data: { name: name2, email: email2, password: password2, gender: gender2 },
             success: function (data) {
